@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "db-desktop-backup"
+version = "0.1.0"
+description = "数据库桌面备份程序，目前支持 PostgreSQL"
+requires-python = ">=3.12"
+dependencies = []
+
+[project.gui-scripts]
+db-desktop-backup = "dbbackup.ui:main"
+
+[tool.setuptools.packages.find]
+include = ["dbbackup*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["integration: 使用独立 PostgreSQL 测试实例"]

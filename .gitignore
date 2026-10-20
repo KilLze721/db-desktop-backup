@@ -1,0 +1,10 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+*.egg-info/
+.venv/
+data/
+.test_runtime/
+dist/
+build/
+需求与上下文记录.md
